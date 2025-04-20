@@ -7,6 +7,10 @@ const bundleAnalyzer = withBundleAnalyzer({
 
 const nextConfig: NextConfig = {
   /* config options here */
+  output: 'export',
+  images: {
+    unoptimized: true,
+  }
 };
 
 export default bundleAnalyzer(nextConfig);
